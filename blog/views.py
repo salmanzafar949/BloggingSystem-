@@ -20,6 +20,7 @@ class PostListView(ListView):
     template_name = "blog/index.html"
     context_object_name = "posts"
     ordering = ['-created_at']
+    paginate_by = '1'
 
 
 class PostDetailView(DetailView):
